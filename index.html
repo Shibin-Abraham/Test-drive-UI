@@ -11,7 +11,109 @@
 </head>
 
 <body>
-  <header>
+ <!-- POPUP -->
+ <div class="popup">
+  <div class="content">
+   <div class="top-section">
+    <div class="txt">
+     <p>Booking Details</p>
+    </div>
+    <div class="close-btn">
+     <img src="./img/close-icon.svg">
+    </div>
+   </div>
+  <!-- <form> -->
+    <div class="data-section">
+     <div class="details">
+      <p>Maruti Suzuki </p>
+      <p>Selerio (vxi)</p>
+     </div>
+     <div class="form-data">
+      <div class="label">
+       <label for="name">Enter Your Name </label>
+      </div>
+      <input id="name" type="text" placeholder="Full Name.." >
+    
+      <div class="label">
+       <label for="email">Email address </label>
+      </div>
+      <input id="email" type="email" placeholder="sample@gmail.com" size="30" >
+    
+      <div class="label">
+       <label for="phone">Phone number</label>
+      </div>
+      <input id="phone" type="tel" placeholder="1234567890">
+      <div class="container">
+       <div>
+        <label>Date</label>
+        <label>Time</label>
+       </div>
+       <div>
+        <input type="date" min="" >
+        <input type="time" >
+       </div>
+      </div>
+    
+      <div class="label">
+       <label for="email">Available places </label>
+      </div>
+      <select name="place">
+       <option value="">select</option>
+       <option value="id">Wayanad</option>
+       <option value="id">Kozhikode</option>
+      </select>
+    
+      <button id="submit-btn">Submit</button>
+    
+     </div>
+    </div>
+   <!-- </form> -->
+   
+  </div>
+ </div>
+ <!-- POPUP END -->
+ 
+ <!-- success popup -->
+ 
+ <div class="success-popup">
+  <div class="content">
+   <div class="head">
+    <img src="./img/success-icon.svg">
+    <p>SUCCESS</p>
+   </div>
+   <div class="msg">
+    <p>Your data has been saved successfully</p>
+   </div>
+  </div>
+ </div>
+ <!-- success popup end -->
+ 
+ <!-- delete confirmation -->
+ <div class="popup-confirmation">
+  <div class="content">
+   <img src="./img/exclamation-triangle.svg">
+   <p>Are you sure you want to delete?</p>
+   <div class="control">
+    <button id="cancel">Cancel</button>
+    <button id="delete">Delete</button>
+   </div>
+  </div>
+ </div>
+  <!-- delete confirmation end -->
+  
+ <div class="error-popup">
+  <div class="content">
+   <div class="head">
+    <img src="./img/exclamation-icon.svg">
+    <p>Oops!</p>
+   </div>
+   <div class="msg">
+    <p>Something went wrong </p>
+   </div>
+  </div>
+ </div>
+ 
+  <header> <!-- header -->
    <nav>
     <div class="left-container">
      <div>
@@ -22,7 +124,7 @@
     </div>
     <div class="right-container">
      <img src="/img/john.jpg" >
-     <p>John Wick</p>
+     <p onclick="console.log("click")">John Wick</p>
     </div>
    </nav>
   </header>
@@ -31,6 +133,7 @@
   
   <div class="main">
    <div class="container">
+    <!-- left bar start -->
     <div class="left-box">
      <p id="header-text">Menu</p>
      <div class="left-nav">
@@ -60,7 +163,11 @@
       </div>
      </div>
     </div>
+    <!-- left bar end -->
+    
+    <!-- right box start -->
     <div class="right-box">
+     
      <section>
       <div>
        <p>Available Cars</p>
@@ -69,8 +176,8 @@
        <input type="search" placeholder="Search.."><button>search</button>
       </div>
      </section>
-     
-     <div class="data-section">
+     <!-- data section start -->
+    <div class="data-section">
       <div class="data">
        <div class="img-container">
         <img src="/img/car1.jpeg">
@@ -92,7 +199,7 @@
          <p>Petrol</p>
         </div>
         <div class="b-btn">
-         <button>Book Now</button>
+         <button id="book-btn">Book Now</button>
         </div>
        </div>
       </div>
@@ -117,7 +224,7 @@
          <p>Petrol</p>
         </div>
         <div class="b-btn">
-         <button>Book Now</button>
+         <button id="test">Book Now</button>
         </div>
        </div>
       </div>
@@ -271,314 +378,120 @@
         </div>
        </div>
       </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
-      <div class="data">
-       <div class="img-container">
-        <img src="/img/car6.jpeg">
-       </div>
-       <div class="container-section">
-        <div class="top-data">Test Drive</div>
-        <div class="c-name">
-         <p>Celerio (vxi)</p>
-        </div>
-        <div class="cc-name">
-         <p>Maruti Suzuki</p>
-        </div>
-        <div class="c-design">
-         <img src="/img/member-icon.svg">
-         <p>4</p>
-         <img src="/img/gear-icon.svg">
-         <p>Manuel</p>
-         <img src="/img/fuel-icon.svg">
-         <p>Petrol</p>
-        </div>
-        <div class="b-btn">
-         <button>Book Now</button>
-        </div>
-       </div>
-      </div>
       
      </div>
+     <!-- data section end -->
      
+     <!-- booking section start -->
+     
+     <div class="booking-section">
+      <div class="row-container">
+       <div class="box-1">
+       <p>Maruti Suzuki celerio</p>
+       </div>
+       <div class="box-2">
+        <p>10/11/2023 12:00 pm</p>
+       </div>
+       <div class="box-3">
+        <img src="./img/update-icon.svg">
+        <img id="trash" src="./img/trash-icon.svg">
+       </div>
+      </div>
+      <div class="row-container">
+       <div class="box-1">
+        <p>Maruti Suzuki celerio</p>
+       </div>
+       <div class="box-2">
+        <p>10/11/2023 12:00 pm</p>
+       </div>
+       <div class="box-3">
+        <img src="./img/update-icon.svg">
+        <img src="./img/trash-icon.svg">
+       </div>
+      </div>
+      <div class="row-container">
+       <div class="box-1">
+        <p>Maruti Suzuki celerio</p>
+       </div>
+       <div class="box-2">
+        <p>10/11/2023 12:00 pm</p>
+       </div>
+       <div class="box-3">
+        <img src="./img/update-icon.svg">
+        <img src="./img/trash-icon.svg">
+       </div>
+      </div>
+      <div class="row-container">
+       <div class="box-1">
+        <p>Maruti Suzuki celerio</p>
+       </div>
+       <div class="box-2">
+        <p>10/11/2023 12:00 pm</p>
+       </div>
+       <div class="box-3">
+        <img src="./img/update-icon.svg">
+        <img src="./img/trash-icon.svg">
+       </div>
+      </div>
+      <div class="row-container">
+       <div class="box-1">
+        <p>Maruti Suzuki celerio</p>
+       </div>
+       <div class="box-2">
+        <p>10/11/2023 12:00 pm</p>
+       </div>
+       <div class="box-3">
+        <img src="./img/update-icon.svg">
+        <img src="./img/trash-icon.svg">
+       </div>
+      </div>
+      <div class="row-container">
+       <div class="box-1">
+        <p>Maruti Suzuki celerio</p>
+       </div>
+       <div class="box-2">
+        <p>10/11/2023 12:00 pm</p>
+       </div>
+       <div class="box-3">
+        <img src="./img/update-icon.svg">
+        <img src="./img/trash-icon.svg">
+       </div>
+      </div>
+      <div class="row-container">
+       <div class="box-1">
+        <p>Maruti Suzuki celerio</p>
+       </div>
+       <div class="box-2">
+        <p>10/11/2023 12:00 pm</p>
+       </div>
+       <div class="box-3">
+        <img src="./img/update-icon.svg">
+        <img src="./img/trash-icon.svg">
+       </div>
+      </div>
+      <div class="row-container">
+       <div class="box-1">
+        <p>Maruti Suzuki celerio</p>
+       </div>
+       <div class="box-2">
+        <p>10/11/2023 12:00 pm</p>
+       </div>
+       <div class="box-3">
+        <img src="./img/update-icon.svg">
+        <img src="./img/trash-icon.svg">
+       </div>
+      </div>
+      <div class="row-container">
+      
+      </div>
+     </div>
+     <!-- booking section end -->
     </div>
+    <!-- right box end -->
    </div>
   </div>
   
-  
-  <script src="main.js"></script>
+   <script src="./js/dashboard.js"></script>
+ 
 </body>
 </html>
